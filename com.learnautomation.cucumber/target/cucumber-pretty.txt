@@ -1,0 +1,15 @@
+Feature: Test Facebook smoke scenario
+
+  Scenario Outline: Test login with valid credentials [90m# features/MyApplication.feature:3[0m
+    [36mGiven Open chrome and start application[0m
+    [36mWhen I enter valid "<username>" and valid "<password>"[0m
+    [36mThen user should be able to login successfully[0m
+    [36mThen communicate with Alice "<number>"[0m
+    [36mThen application should be closed[0m
+
+    Examples: 
+
+  Scenario Outline: Test login with valid credentials [90m# features/MyApplication.feature:12[0m
+    [32mGiven [0m[32mOpen chrome and start application[0m           [90m# SmokeTest.Open_chrome_and_start_application()[0m
+    [32mWhen [0m[32mI enter valid "[0m[32m[1makural[0m[32m" and valid "[0m[32m[1m1314871[0m[32m"[0m   [90m# SmokeTest.I_enter_valid_username_and_valid_password(String,String)[0m
+    [32mThen [0m[32muser should be able to login successfully[0m    [90m# SmokeTest.user_should_be_able_to_login_successfully()[0m
